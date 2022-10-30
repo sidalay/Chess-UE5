@@ -34,6 +34,10 @@ public:
 	// Sets default values for this actor's properties
 	ATile();
 
+	void SetTileInfo(FTileInfo InTileInfo)
+	{
+		TileInfo = InTileInfo;
+	}
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
